@@ -1,5 +1,5 @@
 # Description
-Show me how to develop an application to allow customers to see a list of dogs to adopt in their area similar to a dating app like Bumble.
+A modern webapp to allow pet adopters to interact with adoptable animals in their area similar to a dating app like Bumble.
 
 # User types
 Admin - A user who manages the data
@@ -10,30 +10,38 @@ Adoptee - A user who intends to post and animal for adoption
 # Requirements
 - Users must be able to register with Google, Apple ID or Facebook.
   - Upon registering, they must choose if they wish to adopt or post animals to adopt.
-- Adopters must answer a simple list of questions to understand their preference in animal.  
-  - Cat or Dog
-  - Animal size (Large, Medium, Small)
-  - Fur Type (Furry, not Furry, hypoallergenic, No preference)
-  - What breed [Optional]
-  - Age (Young, Adult, Senior)
+- An adopter must answer a simple list of questions to understand their preference in animal.  
 - After answering the questionnaire, the adopter must start to see animals in their area
-  - For future logins, animal swiping will immediately appear
-- An Adopter will see a Picture of the animal with their name and age.
+- An adopter will see a Picture of the animal with their name and age.
 - An adopter can select the X button  to go to the next animal
 - An adopter can select the Check button to start a chat with the adoptee
-- An adopter can swipe right to start a chat with the adoptee
-- An adopter can click on an animal to see profile info
+- An adopter may optionally send payment to adoptees
+- An adopter may send donations to adoptees
 - After registering, the adoptee option must be disabled for future development
-- An adopter can click a profile icon at the top right to access profile settings or log out
-- A user can modify their name and adopter preferences in the profile settings
+- An adopter may click a profile icon at the top right to access profile settings or log out
+- A user may modify their name and adopter preferences in the profile settings
+- An adoptee may list a new animal with a basic profile for a small fee
+- A user may access their chats at anytime
+- An adoptee may update or remove their animal listing at anytime
 
+# AI Agent Integration
+- Image submission moderation agent
+- Animal or user profile moderation agent
+- Profile assistant agent
+- Email support agent
+
+# Income streams
+- Animal listing fees
+- Adopter to Adoptee transaction fees
+- Adopter animal adoption fees
+- 
 # System Architecture
 - C# .NET Minimal API microservices backend
 - SQL database backend
 - React frontend which references APIs for all data access
 - RabbitMQ to handle events
 - Redis to handle caching
-- Google analytics for site access
+- Google analytics for site access data
 - Logging must be stored with Sentry.io
 - Use .NET for Gateway
 
