@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Adoption/bin/Debug/net9.0
+/Adoption/obj
+/.vs
+/Adoption/Properties/launchSettings.json
+/Gateway/obj
+/Users/bin/Debug/net9.0
+/Users/obj
