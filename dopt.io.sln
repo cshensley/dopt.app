@@ -5,9 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{A6F024F0-2F61-4DDC-8E1B-69D74B1A2C57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adoption", "Adoption\Adoption.csproj", "{759756CE-16F9-4597-851D-A5BACFF1ECD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoptionApi", "Adoption\AdoptionApi.csproj", "{759756CE-16F9-4597-851D-A5BACFF1ECD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users", "Users\Users.csproj", "{152136D8-F6F9-4FC4-9B4E-04A7F42894DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApi", "Users\UserApi.csproj", "{152136D8-F6F9-4FC4-9B4E-04A7F42894DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{BD4A33EF-044F-4198-B1D6-1375505E9161}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "middleware", "middleware", "{9D370D10-E6A3-4E31-BA9D-B568902C538E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +34,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6F024F0-2F61-4DDC-8E1B-69D74B1A2C57} = {9D370D10-E6A3-4E31-BA9D-B568902C538E}
+		{759756CE-16F9-4597-851D-A5BACFF1ECD6} = {BD4A33EF-044F-4198-B1D6-1375505E9161}
+		{152136D8-F6F9-4FC4-9B4E-04A7F42894DC} = {BD4A33EF-044F-4198-B1D6-1375505E9161}
 	EndGlobalSection
 EndGlobal
